@@ -13,9 +13,9 @@ body
 header
     width 100% //Všimněte si, jak zde nejsou středníky, ani dvojtečky.
     height 100px //Dodržujte odszaení ideálně pomocí tlačítka TAB
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px //Nastavíme si mále stínění pdo headerem, vypadá to pak dobře :P
+    box-shadow: rgba(255,208,0,0.3) 0px 4px 12px //Nastavíme si mále stínění pdo headerem, vypadá to pak dobře :P
     position relative //Positions relative je jistota pro fungování positions absolute pro jiné své potomky
-    background-color: none //Zde nastavují barvu na žádnou, všimněte si, že dvojtečky můžete používat
+    background-color: rgb(255, 208, 0) //Zde nastavují barvu na žádnou, všimněte si, že dvojtečky můžete používat
 
     //wrapper zde volám jako potomka header, do CSS se Vám vypíše jako - header .wrapper {Zde je pak Váš kód}
     //Pokud by byla mimo header (odsazená uplně vlevo) vyhledavál by .wrapper v celém body. Tímhle ho vyledá jen v headeru (ve svém rodiči)
@@ -128,4 +128,8 @@ header
     .is-open
         //translateX(-50%) - musíme mu říct, že hodnota pro X je stále stejná jako v základu, jinak si jí dá do defaultní hodnoty 0
         transform: translateX(-50%) translateY(0px) //Zde nastavujeme, jak se pohne, pokud se třída přidá, měníme hlavně Y na 0, tím se nám navigace posune hned pod header.
-        
+main
+    background-color: rgb(48, 48, 48)
+    height: 1000px
+    p
+        color white
